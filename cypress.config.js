@@ -8,7 +8,7 @@ module.exports = {
     },
   },
   env: {
-    foo: 'bar',
-    baz: 'quux'
+    LOGIN: process.env.CYPRESS_LOGIN | 'demo',
+    PASSWORD: process.env.CYPRESS_PASSWORD | 'demo'
   }
 };
